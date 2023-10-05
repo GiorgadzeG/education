@@ -56,6 +56,3 @@ function calculate(num1, num2){
 
 console.log(calculate(150,200))
 console.log(calculate("gio",200))
-
-
-console.log("check")
