@@ -11,7 +11,6 @@ const user = {
     userName: '007',
     sayHello: function() {
         return 'hello'
-        // console.log('heeellloo')  -- es rato ar amodis tu  returnis qveshaa?
     }
 }
 

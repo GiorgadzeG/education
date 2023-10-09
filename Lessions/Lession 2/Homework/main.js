@@ -11,8 +11,8 @@ let users = [
 {name: 'Ana', age: 28},
 ]
 
-let youngestName = ""
-let youngestAge = 150
+let youngestName = users[0].name
+let youngestAge = users[0].age
 
 for(let i = 0; i < users.length; i++){
     let user = users[i]
@@ -24,7 +24,7 @@ for(let i = 0; i < users.length; i++){
     }
 }
 console.log("Youngest user is", youngestName,'Age:', youngestAge) // Yangest user is Lasha Age: 21
-console.log(users)
+// console.log(users)
 
 
 // დაწერე ფუნქცია, რომელიც პარამეტრად
@@ -32,12 +32,20 @@ console.log(users)
 // მნიშვნელობების მქონე ახალ
 // (განსხვავებულ) ობიექტს
 
-let user = {
+let object = {
     name: "Giorgi",
     lastname: "Giorgadze",
     age: 23,
 }
 
+function copyobject(user){
+    let newObject = {}
+    
+    for(let key in user){
+        newObject[key] = user[key]
+    }
+    return newObject
+}
 
 
 
@@ -72,29 +80,34 @@ function kamateli(){
     return Math.floor(Math.random() * 6) + 1;
 }
 
+
 function kamateligame(){
+    let winner = null
     console.log("Game is start...")
-    while(true) {
-    let player1 = kamateli()
-    let player2 = kamateli()
-    console.log ("player 1:", player1)
-    console.log ("player 2:", player2)
-    if(player1 === 3 && player2 === 3) {
-    // tu gbinda ro tamashi gacherdes roca orive motamashes amouva 3
-    //  console.log ("Tie")
-    //  console.log ("Good game, congratulations")
-    //  break
-    } else
-    if(player1 === 3){
-        console.log("Player 1 win!")
-        console.log ("Good game, congratulations")
-        break
-    } else if(player2 === 3){
-        console.log("Player 2 win!")
-        console.log ("Good game, congratulations")
-        break
+    while(winner != true) {
+        let player1 = kamateli()
+        let player2 = kamateli()
+        console.log (`Player 1 rolled a: ${player1}     Player 2 rolled a: ${player2}`)
+        if(player1 === 3 && player2 === 3) {
+        // tu ginda ro tamashi gacherdes roca orive motamashes amouva 3, winaamdeg shemtxvevashi moigebs player 1 
+        // radgan pirveli agorebs kamatels
+        //  console.log ("Tie")
+        //  console.log ("Good game, congratulations")
+        //  break
+        } else if(player1 === 3){
+            winner = true
+            console.log("Player 1 is winner!")
+            break
+        } else if(player2 === 3){
+            winner = true
+            console.log("Player 2 is winner!")
+        
+            break
+        }
     }
-    }
+    console.log ("Good game, congratulations")
 }
 
 kamateligame()
+
+
