@@ -55,27 +55,48 @@ function kamateli(){
     return Math.floor(Math.random() * 6) + 1;
 }
 
-player1win = false
-player2win = false
 
-function game(){
-    let player1win = kamateli()
-    console.log("player 1:", player1win)
-    let player2win = kamateli()
-    console.log("player 2:", player2win)
-    if(player1win == 3 && player2win == 3) {
-        return "tie"} else
-    if(player1win == 3){
-        player1win = true
-        return ("Player 1 win")
-    }else if(player2win == 3){
-        player1win = true
-        return ("Player 2 win")
-    } else if(player1win == 3 || player2win == 3){
-        return "tie"
-    } else {
-        return "tie"
-    }
-    }
+// function game(){
+//     let player1win = kamateli()
+//     console.log("player 1:", player1win)
+//     let player2win = kamateli()
+//     console.log("player 2:", player2win)
+//     if(player1win == 3 && player2win == 3) {
+//         return "tie"} else
+//     if(player1win == 3){
+//         return ("Player 1 win")
+//     }else if(player2win == 3){
+//         return ("Player 2 win")
+//     } else {
+//         return "tie"
+//     }
+//     }
 
-console.log(game())  // sxva ragaca gavakete...
+// console.log(game())  // sxva ragaca gavakete...
+
+
+function kamateligame(){
+    console.log("Game is start...")
+    while(true) {
+    let player1 = kamateli()
+    let player2 = kamateli()
+    console.log ("player 1:", player1)
+    console.log ("player 2:", player2)
+    if(player1 === 3 && player2 === 3) {
+     console.log ("Tie")
+     console.log ("Good game, congratulations")
+     break
+    } else
+    if(player1 === 3){
+        console.log("Player 1 win!")
+        console.log ("Good game, congratulations")
+        break
+    } else if(player2 === 3){
+        console.log("Player 2 win!")
+        console.log ("Good game, congratulations")
+        break
+    } 
+    }
+}
+
+kamateligame()
