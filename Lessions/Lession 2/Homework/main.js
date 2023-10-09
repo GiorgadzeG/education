@@ -110,5 +110,5 @@ function kamateligame(){
 }
 
 kamateligame()
-
-
+let button = document.getElementById("button")
+button.addEventListener('click', kamateligame)
