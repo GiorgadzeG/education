@@ -50,12 +50,6 @@ let user = {
 // გამარჯვებული
 
 
-
-function kamateli(){
-    return Math.floor(Math.random() * 6) + 1;
-}
-
-
 // function game(){
 //     let player1win = kamateli()
 //     console.log("player 1:", player1win)
@@ -71,9 +65,12 @@ function kamateli(){
 //         return "tie"
 //     }
 //     }
-
 // console.log(game())  // sxva ragaca gavakete...
 
+
+function kamateli(){
+    return Math.floor(Math.random() * 6) + 1;
+}
 
 function kamateligame(){
     console.log("Game is start...")
@@ -83,9 +80,10 @@ function kamateligame(){
     console.log ("player 1:", player1)
     console.log ("player 2:", player2)
     if(player1 === 3 && player2 === 3) {
-     console.log ("Tie")
-     console.log ("Good game, congratulations")
-     break
+    // tu gbinda ro tamashi gacherdes roca orive motamashes amouva 3
+    //  console.log ("Tie")
+    //  console.log ("Good game, congratulations")
+    //  break
     } else
     if(player1 === 3){
         console.log("Player 1 win!")
@@ -95,7 +93,7 @@ function kamateligame(){
         console.log("Player 2 win!")
         console.log ("Good game, congratulations")
         break
-    } 
+    }
     }
 }
 
