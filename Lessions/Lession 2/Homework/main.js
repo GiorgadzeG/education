@@ -46,8 +46,9 @@ function copyobject(user){
     }
     return newObject
 }
-
-
+let newObject = copyobject(object)
+console.log(object)
+console.log(newObject)
 
 
 
