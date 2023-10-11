@@ -90,8 +90,8 @@ function kamateligame(){
         let player2 = kamateli()
         console.log (`Player 1 rolled a: ${player1}     Player 2 rolled a: ${player2}`)
         if(player1 === 3 && player2 === 3) {
-        // tu ginda ro tamashi gacherdes roca orive motamashes amouva 3, winaamdeg shemtxvevashi moigebs player 1 
-        // radgan pirveli agorebs kamatels
+        // tu ginda ro tamashi gacherdes roca orive motamashes amouva 3, winaamdeg shemtxvevashi tamashi gagdzeldeba sanam
+        // mogebuli ar gamovlindeba 
         //  console.log ("Tie")
         //  console.log ("Good game, congratulations")
         //  break
