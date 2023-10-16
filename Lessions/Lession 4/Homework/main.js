@@ -54,5 +54,3 @@ function sortUsersByAge(users) {
 
   const sortedUsers = sortUsersByAge(users);
   console.log(sortedUsers);
-
-  
