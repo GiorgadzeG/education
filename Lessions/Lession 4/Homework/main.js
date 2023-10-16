@@ -50,9 +50,7 @@ function sortUsersByAge(users) {
     {name: 'Lasha', age: 30}, 
     {name: 'Saba', age: 20}
 ]
-  
+
 
   const sortedUsers = sortUsersByAge(users);
   console.log(sortedUsers);
-  
-
