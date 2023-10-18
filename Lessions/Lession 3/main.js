@@ -10,6 +10,7 @@ console.log(manufacturer, brand, color, year); // Porche Cayenne black 2022
 
 
 
+
 const brands = ["apple", "samsung", "lenovo", "asus"]
 const [apple, lenovo, asus, hp] = brands
 
@@ -33,3 +34,32 @@ console.log(user1, user2); // Giga James
 
 const [ one, , two] = users
 console.log(one, two); // James Tornike
+
+
+
+
+const firstName = "Temo"
+
+const user = {
+    firstName: "James",
+    lastName: "Bond",
+    profile: {
+        nickName: "007",
+        age: 40,
+        adress: {
+            street: "Tamarashvili 13"
+        }
+    }
+}
+const {firstName: myFirstName, lastName, profile: {nickName, age, adress: {street}}} = user
+console.log(myFirstName, lastName, nickName, age, street) // James Bond 007 40 Tamarashvili 13
+
+
+function myProfile ({profile: {adress: {street}}}){
+    return "adress" + ' ' + street
+}
+
+console.log(myProfile(user));
+
+
+
