@@ -156,6 +156,49 @@ const user6 = {
     firstName: "James",
     lastName: "Bond",
 }
-//tavs vizgvevt ro ar daiqrashot tu araa mititebuli
+//tavs vizgvevt ro ar daiqrashot tu araa mititebuli carieli obiektis mititebit
 const {adress: {city: newCity} = { }} = user6
 console.log(newCity); // undefined
+
+
+
+//spread operatori "..."
+const user7 = {
+    firstName: "James",
+    lastName: "Bond",
+    profile: {
+        nickName: "007",
+        age: 40,
+    },
+    target: ["target1", "target2"]
+}
+
+// vqmnit srul kopias, pirvelari masivi ar icvleba, tvali unda vadevnot chanestil obiektebs, ise marto top levels uyurebs
+const user8 = {
+    ...user7,
+    profile: {
+        ...user7.profile
+    },
+    target: [...user7.target]
+}
+
+user8.profile.age = 45
+
+console.log(user7.profile.age); // 40
+console.log(user8.profile.age); // 45
+
+
+
+//rest operatori shegvidzlia miutitot ramdenic gvinda
+const calculateSumGoodVersion = (...args) => {
+    let total = 0;
+    for (const num of args) {
+        total += num
+    }
+    return total
+}
+
+console.log(calculateSumGoodVersion(1,4,2,5,6,7,4,22,1,3,5,5)) // 65
+console.log(calculateSumGoodVersion(1,4,2,5,6,7,4,22,1,3,5,"f")) // "60f"
+console.log(calculateSumGoodVersion(1,4,2,5,6,7,4,22,1,"n",5,5)) // "52n55" // anu shekriba da shemdeg gadavida ukve sheertebaze tekstis da daabruna stringi
+// shegvidzlia aseve gamovacalot (num1, num1, ...args) - pirvel or cifrs ar chatvlis
