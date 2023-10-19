@@ -26,8 +26,10 @@ function PirveliAsoDidi(text) {
   return fixedText;
 }
 
-console.log("Mr. and Mrs. Dursley, of number four, Privet Drive, were proud to say that they were perfectly normal, thank you very much. They were the last people you’d expect to be involved in anything strange or mysterious, because they just didn’t hold with such nonsense.");
-console.log(PirveliAsoDidi("Mr. and Mrs. Dursley, of number four, Privet Drive, were proud to say that they were perfectly normal, thank you very much. They were the last people you’d expect to be involved in anything strange or mysterious, because they just didn’t hold with such nonsense."));
+const a = "Mr. and Mrs. Dursley, of number four, Privet Drive, were proud to say that they were perfectly normal, thank you very much. They were the last people you’d expect to be involved in anything strange or mysterious, because they just didn’t hold with such nonsense."
+
+console.log(a);
+console.log(PirveliAsoDidi(a));
 
 
 // ● დაწერე ფუნქცია, რომელიც პარამეტრად
