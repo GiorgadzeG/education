@@ -202,3 +202,6 @@ console.log(calculateSumGoodVersion(1,4,2,5,6,7,4,22,1,3,5,5)) // 65
 console.log(calculateSumGoodVersion(1,4,2,5,6,7,4,22,1,3,5,"f")) // "60f"
 console.log(calculateSumGoodVersion(1,4,2,5,6,7,4,22,1,"n",5,5)) // "52n55" // anu shekriba da shemdeg gadavida ukve sheertebaze tekstis da daabruna stringi
 // shegvidzlia aseve gamovacalot (num1, num1, ...args) - pirvel or cifrs ar chatvlis
+
+
+
