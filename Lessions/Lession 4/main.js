@@ -95,3 +95,40 @@ const capitalWords2 = (words) => {
 
 // objects 
 
+const person = {
+    name: "James",
+    address: {
+        tbilisi: {
+            district: {
+                street: "Tamarashvili"
+            }
+        }
+    },
+    friends: [
+        {closeFriend: {name: "Giga"}},
+        {closeFriend: {name: "Giorgi"}}
+    ]
+}
+
+const deepCopy = (obj) => {
+    const result = {}
+    for(const fn in obj){
+        if(typeof obj[fn] === "object"){
+            if(Array.isArray(obj[fn])){
+                //Array
+                result[fn] = obj[fn].map((el) => deepCopy(el))
+            }else{
+                //object
+                result[fn] = deepCopy(obj[fn])
+            }
+
+        }else{
+            result[fn] = obj[fn]
+
+        }
+    }
+    return  result
+}
+
+const person2 = deepCopy(person)
+console.log(person2);
