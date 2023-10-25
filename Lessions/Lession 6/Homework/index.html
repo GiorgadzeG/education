@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ფერის შეცვლა</title>
+    <style>
+        body {
+            transition: background-color 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <button id="openModal">ფერის შეცვლა</button>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>ფერის შეცვლა</h2>
+            <input type="text" id="colorInput" placeholder="ჩაწერე ფერი">
+            <button id="changeColor">შეცვლა</button>
+        </div>
+    </div>
+    <input type="text" id="numberInput" placeholder="ჩაწერე რიცხვები გამოყოფილი ':'-ით">
+    <button id="calculateAverage">Average</button>
+    <div id="result"></div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
