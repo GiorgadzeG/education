@@ -37,11 +37,12 @@ function getCity(obj){
     if(banks && banks[2]){
         const {adress} = banks[2]
         if(adress && adress.city){
-            console.log(city)
+            return city
         }
     }
+    return undefined
 }
-getCity(user) // Tbilisi
+ console.log(getCity(user)) // Tbilisi
 
 
 // ● დაწერე ფუნქცია, რომელიც პარამეტრად
