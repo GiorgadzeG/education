@@ -169,4 +169,4 @@ const resFind = array.find(function(el){
 
 console.log(resFind) // 7
 
-// map filteri da find abruneben axal mnishvnelobs ise ro ar cvlian dziritad masivs
+// map filteri da find abruneben axal mnishvnelobs ise ro ar cvlian dziritad masivs, foreach ar abrunebs saertod
