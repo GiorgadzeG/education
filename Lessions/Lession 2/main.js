@@ -137,13 +137,13 @@ do{
 //
 const arr3 = ['James', 'Giorgi', 'Giga', 'Temo']
 
-arr3.forEach(function(element, index){
+arr3.forEach(function(element, index){       // pirveli abrunebs mnishvnelobas meore indexx, saxeli mnishvnelovani araa, mesame kide tu daemata ragac massivs abrunebs
     console.log(index + ' is equal to ' + element)
 })                  // 0 is equal to James
                     // 1 is equal to Giorgi
                     // 2 is equal to Giga
                     // 3 is equal to Temo
-                    // *results ar abrunebs
+                    // * arafers ar abrunebs mxolod consolshi gamogvaq, tu gvunda ro daabrunos gamoviyenot map
 
 
 const resMap = arr3.map(function(racginda, index){
@@ -153,6 +153,7 @@ console.log(resMap) // 0 is equal to James
                     // 1 is equal to Giorgi
                     // 2 is equal to Giga
                     // 3 is equal to Temo
+                    // axal masivshi iwers ise rom pirvels masivs ar afuchebs
 
 
 const array = [1, 5, 3, 7, 4, 3, 2, 9]
