@@ -60,7 +60,7 @@ function CopyObject(obj) {
     }
     const copy = {};
     for (const key in obj) {
-            copy[key] = CopyObject(obj[key])
+        copy[key] = CopyObject(obj[key])
     }
     return copy;
 }
