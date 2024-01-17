@@ -60,9 +60,7 @@ function CopyObject(obj) {
     }
     const copy = {};
     for (const key in obj) {
-        if (obj.hasOwnProperty(key)) {
-            copy[key] = CopyObject(obj[key]);
-        }
+            copy[key] = CopyObject(obj[key])
     }
     return copy;
 }
