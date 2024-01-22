@@ -6,14 +6,13 @@
 // ელემენტი - მესამე ელემენტიდან
 // დაწყებული ყველა დანარჩენის ნამრავლი
 
-function superFunction (...args){
-    if(args.length <= 2){
-        return "Need more numbers"
+function superFunction (num1, num2, ...args){
+    sum = num1 + num2
+    total = 1
+    for (const a of args){
+        total *= a
     }
-
-    let sum = args[0] + args[1]
-    let multiplication = args.slice(2).reduce((a, b)  => a * b)
-    return [sum, multiplication]
+    return [sum, total]
 }
 console.log(superFunction(1,2,3,4,5,6,7))  // [3, 2520]
 

@@ -104,7 +104,7 @@ const newProfile = (username) => {
 console.log(newProfile("Giorgi")); // hello, Giorgi
   
 const newProfile2 = (username, username2) => `hello, ${username} and ${username2}`
-console.log(newProfile2("Giorgi", "Giga")); // heloo Giorgi and Giga
+console.log(newProfile2("Giorgi", "Giga")); // hello Giorgi and Giga
 
 
 // this-it shegvidzlia gamovidzaxot tu funqcia aris gamodzaxebuli, tu ki mokle dawerit vxmarobs mashin ar mushaobs da edwebs mtavar obiktshi da ara "user3" shi
@@ -202,6 +202,4 @@ console.log(calculateSumGoodVersion(1,4,2,5,6,7,4,22,1,3,5,5)) // 65
 console.log(calculateSumGoodVersion(1,4,2,5,6,7,4,22,1,3,5,"f")) // "60f"
 console.log(calculateSumGoodVersion(1,4,2,5,6,7,4,22,1,"n",5,5)) // "52n55" // anu shekriba da shemdeg gadavida ukve sheertebaze tekstis da daabruna stringi
 // shegvidzlia aseve gamovacalot (num1, num1, ...args) - pirvel or cifrs ar chatvlis
-
-
-
+// args modis masivis saxit da vamushavebt for of-it
