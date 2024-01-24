@@ -112,6 +112,7 @@ const person = {
 
 const deepCopy = (obj) => {
     const result = {}
+    
     for(const fn in obj){
         if(typeof obj[fn] === "object"){
             if(Array.isArray(obj[fn])){
