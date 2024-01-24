@@ -47,7 +47,7 @@ const combineArrays = ([first, last], b) => {
 
     return [first, ...b, last]
 }
-console.log(combineArrays([3, 3, 15, 14, 12], [4, 32 ,2 , 4, 66,2])); // [3, 4, 32, 2, 4, 66, 2, 3]
+console.log(combineArrays([3, 3, 15, 14, 12], [4, 32, 2, 4, 66, 2])); // [3, 4, 32, 2, 4, 66, 2, 3]
 
 
 // string - mnishvnelobaa aq dids da patara asos

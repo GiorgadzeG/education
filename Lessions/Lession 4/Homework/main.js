@@ -14,22 +14,19 @@
 // გადაწერს დიდი ასოთი და დააბრუნებს
 // ახალ წინადადებას
 
-function PirveliAsoDidi(text) {
-  const words = text.split(" ");
-  const PirveliAsoDidi = words.map(word => {
-    if (word) {
-      return word[0].toUpperCase() + word.slice(1).toLowerCase();
-    }
-    return word;
-  });
-  const fixedText = PirveliAsoDidi.join(" ");
-  return fixedText;
+
+const capitalWords = (words) => {
+  return words.map((word) => word.split(' ')
+      .map((w) => w[0].toUpperCase() +w.slice(1))
+      .join(" ")
+  )
 }
 
-const a = "Mr. and Mrs. Dursley, of number four, Privet Drive, were proud to say that they were perfectly normal, thank you very much. They were the last people you’d expect to be involved in anything strange or mysterious, because they just didn’t hold with such nonsense."
+
+const a = ["Mr. and Mrs. Dursley, of number four, Privet Drive, were proud to say that they were perfectly normal, thank you very much. They were the last people you’d expect to be involved in anything strange or mysterious, because they just didn’t hold with such nonsense."]
 
 console.log(a);
-console.log(PirveliAsoDidi(a));
+console.log(capitalWords(a));
 
 
 // ● დაწერე ფუნქცია, რომელიც პარამეტრად
