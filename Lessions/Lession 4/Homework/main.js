@@ -5,7 +5,11 @@
 // მნიშვნელობით და დააბრუნებს ახალ stringს
 // ● არ გამოიყენო string.replace() ფუნქცია
 
-//??
+
+function replace(string, valueToReplace, valueToReplaceWith){
+  return string.split(valueToReplace).join(valueToReplaceWith)
+}
+console.log(replace("my name is Giga", "Giga", "Gio")); // "my name is Gio"
 
 
 // ● დაწერე ფუნქცია, რომელიც პარამეტრად
